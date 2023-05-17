@@ -24,7 +24,7 @@
 		"prepare": "npm run verify"
 	},
 	"peerDependencies": {
-		"typescript": "~4.9.4"
+		"typescript": "~5.0.4"
 	},
 	"devDependencies": {
 		"prettier": "^2.8.1"
