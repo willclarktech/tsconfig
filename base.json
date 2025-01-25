@@ -2,13 +2,12 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"compilerOptions": {
 		"allowArbitraryExtensions": true,
-		"baseUrl": "./",
+		"baseUrl": "${configDir}/",
 		"composite": true,
 		"declarationMap": true,
 		"downlevelIteration": true,
 		"exactOptionalPropertyTypes": true,
 		"forceConsistentCasingInFileNames": true,
-		"include": ["src/**/*"],
 		"incremental": true,
 		"isolatedDeclarations": true,
 		"isolatedModules": true,
@@ -22,13 +21,15 @@
 		"noUncheckedSideEffectImports": true,
 		"noUnusedLocals": false,
 		"noUnusedParameters": false,
-		"outDir": "./dist/",
+		"outDir": "${configDir}/dist/",
 		"removeComments": true,
 		"resolveJsonModule": true,
+		"rootDir": "${configDir}/src/",
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
 		"stripInternal": true,
 		"target": "ESNext"
-	}
+	},
+	"include": ["${configDir}/src/**/*"]
 }
