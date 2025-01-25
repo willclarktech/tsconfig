@@ -18,6 +18,10 @@
 		"node": ">=20",
 		"npm": ">=10"
 	},
+	"keywords": [
+		"typescript",
+		"tsconfig"
+	],
 	"scripts": {
 		"format": "prettier --ignore-path .gitignore --write .",
 		"format:check": "npm run format -- --check",
