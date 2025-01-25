@@ -7,31 +7,44 @@ Default TypeScript configuration for personal projects.
 Install the package:
 
 ```sh
-npm install --save-dev https://github.com/willclarktech/tsconfig-willclarktech
+npm install --save-dev willclarktech/tsconfig-willclarktech
+```
+
+Or via `bun`:
+
+```sh
+bun add --save-dev github:willclarktech/tsconfig-willclarktech
 ```
 
 ## Usage
 
-In TS projects extend from the default config in your TypeScript configuration file:
+Extend from the relevant config in your project’s TypeScript configuration file. For example:
 
 ```json
 {
-	"extends": "tsconfig-willclarktech/tsconfig-base.json"
+	"extends": "tsconfig-willclarktech/base.json"
 }
 ```
 
-In React projects extend from the `react` config:
+Available configs:
 
-```json
-{
-	"extends": "tsconfig-willclarktech/tsconfig-react.json"
-}
-```
+| Project type       | Config                                      |
+| ------------------ | ------------------------------------------- |
+| NodeJS application | `tsconfig-willclarktech/node.json`          |
+| NodeJS library     | `tsconfig-willclarktech/library.json`       |
+| Types-only library | `tsconfig-willclarktech/library-types.json` |
+| Bun project        | `tsconfig-willclarktech/bun.json`           |
+| Browser project    | `tsconfig-willclarktech/browser.json`       |
 
-In library projects extend from the `library` config:
+## Additional configuration
 
-```json
-{
-	"extends": "tsconfig-willclarktech/tsconfig-library.json"
-}
-```
+The following configuration options have defaults but are likely to be overridden in your project:
+
+1. `baseUrl`
+1. `include`
+1. `outDir`
+1. `target`
+
+For projects using React or other JSX-based libraries, you may also need to set the following:
+
+1. `jsx`
