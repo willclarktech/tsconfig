@@ -22,19 +22,19 @@ Extend from the relevant config in your project’s TypeScript configuration fil
 
 ```json
 {
-	"extends": "tsconfig-willclarktech/base.json"
+	"extends": "@willclarktech/tsconfig/base.json"
 }
 ```
 
 Available configs:
 
-| Project type       | Config                                      |
-| ------------------ | ------------------------------------------- |
-| NodeJS application | `tsconfig-willclarktech/node.json`          |
-| NodeJS library     | `tsconfig-willclarktech/library.json`       |
-| Types-only library | `tsconfig-willclarktech/library-types.json` |
-| Bun project        | `tsconfig-willclarktech/bun.json`           |
-| Browser project    | `tsconfig-willclarktech/browser.json`       |
+| Project type       | Config                                       |
+| ------------------ | -------------------------------------------- |
+| NodeJS application | `@willclarktech/tsconfig/node.json`          |
+| NodeJS library     | `@willclarktech/tsconfig/library.json`       |
+| Types-only library | `@willclarktech/tsconfig/library-types.json` |
+| Bun project        | `@willclarktech/tsconfig/bun.json`           |
+| Browser project    | `@willclarktech/tsconfig/browser.json`       |
 
 ## Additional configuration
 
