@@ -40,11 +40,13 @@ Available configs:
 
 The following configuration options have defaults but are likely to be overridden in your project:
 
-1. `baseUrl`
 1. `include`
-1. `outDir`
-1. `target`
+1. `compilerOptions`
+   1. `baseUrl`
+   1. `outDir`
+   1. `target`
 
 For projects using React or other JSX-based libraries, you may also need to set the following:
 
-1. `jsx`
+1. `compilerOptions`
+   1. `jsx`
