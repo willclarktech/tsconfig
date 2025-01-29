@@ -1,4 +1,4 @@
-# tsconfig-willclarktech
+# @willclarktech/tsconfig
 
 Default TypeScript configuration for personal projects.
 
@@ -7,13 +7,13 @@ Default TypeScript configuration for personal projects.
 Install the package:
 
 ```sh
-npm install --save-dev willclarktech/tsconfig-willclarktech
+npm install --save-dev willclarktech/tsconfig
 ```
 
 Or via `bun`:
 
 ```sh
-bun add --save-dev github:willclarktech/tsconfig-willclarktech
+bun add --save-dev github:willclarktech/tsconfig
 ```
 
 ## Usage
